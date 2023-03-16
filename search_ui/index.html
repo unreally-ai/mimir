@@ -18,11 +18,15 @@
     </div> 
     <div class="head">
         <h1>Unreally</h2>
-        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h4>
+        <h4>Get real-time internet context for claims. Enter a single one or upload a document and we will extract the key claims. Then press the orange button.</h4>
     </div>
     <!-- search bar -->
     <div class="container">
-        <button class="upbutton" type="submit"><img src="images/upload.svg"></button>
+        <!-- file upload button -->
+        <!-- <button class="upbutton" type="submit"><img src="images/upload.svg"></button> -->
+        <input type="file" id="upload" hidden/>
+        <label for="upload"><img src="images/upload.svg"></label>
+
         <form action="" class="search-bar">
             <input type="text" placeholder="enter a claim" name="q">
             <img src="images/search.svg">

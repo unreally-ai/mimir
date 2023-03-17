@@ -1,16 +1,21 @@
 // reads the input claim(s)
 function readInput() {
     //todo: check if file uploaded (and if txt, pdf file)
-    
-    //else read from bar
-    let text = document.getElementById('search-bar-input').value
-    // check if empty
-    if(text.length == 0) {
-        return 1
+    if (1 == 2) {
+        print("math is no more")
+        return 666
     }
+    else {
+        //else read from bar
+        let text = document.getElementById('search-bar-input').value
+        // check if empty
+        if(text.length == 0) {
+            return 1
+        }
 
-    console.log(text)
-    return text
+        console.log(text)
+        return text
+    }
 }
 
 function openOverlay() {
@@ -18,7 +23,7 @@ function openOverlay() {
     // read the input
     readInput()
     // open overlay
-    ocument.getElementById("overlay-container").style.width = "100%";
+    document.getElementById("overlay-container").style.width = "100%";
 }
 
 function closeOverlay() {

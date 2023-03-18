@@ -4,6 +4,7 @@
     <meta name="description" content="width=device-width, inital-scale=1.0">
     <title>Unreally</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script> 
 </head>
 <body>
@@ -31,7 +32,14 @@
             <input id="search-bar-input" type="text" placeholder="enter a claim" name="q">
             <img src="images/search.svg">
         </form>
-        <button id="gobutton" type="submit" onclick="openOverlay()"><img src="images/arrow-right.svg"></button>
+
+        <button id="gobuttonLoad" class="buttonload" type="submit" onclick="openOverlay()">
+            <i class="fa fa-refresh fa-spin"></i>
+        </button>
+
+        <button id="gobuttonDefault" type="submit" onclick="openOverlay()">
+            <img src="images/arrow-right.svg">
+        </button>
     </div>
 
 </body>

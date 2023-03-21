@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="width=device-width, inital-scale=1.0">
+    <title>Unreally</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+    <!-- overlay -->
+    <div id="overlay-container" class="overlay">
+        <a class="closebtn" onclick="closeOverlay()">×</a>
+        <div class="overlay-content">
+            <!-- overlay content -->
+            <h2>Result:</h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div> 
+    <div class="head">
+        <h1>Unreally</h2>
+        <h4>Get real-time internet context for claims. Enter a single one or upload a document and we will extract the key claims. Then press the orange button.</h4>
+    </div>
+    <!-- search bar -->
+    <div class="container">
+        <!-- file upload button -->
+        <!-- <button class="upbutton" type="submit"><img src="../assets/images/upload.svg"></button> -->
+        <div class="image-upload">
+            <label for="file-input">
+              <img src="../assets/images/upload.svg"/>
+            </label>
+          
+            <input id="file-input" type="file" />
+        </div>
+
+        <form action="" class="search-bar">
+            <input type="text" placeholder="enter a claim" name="q">
+            <img src="../assets/images/search.svg">
+        </form>
+        <button class="gobutton" type="submit" onclick="openOverlay()"><img src="../assets/images/arrow-right.svg"></button>
+    </div>
+
+</body>
+</html>

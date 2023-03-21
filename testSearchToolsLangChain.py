@@ -2,13 +2,15 @@ from langchain.agents import initialize_agent, load_tools, tool
 from langchain import OpenAI
 from langchain.utilities import GoogleSearchAPIWrapper
 import os
+from secrets import *
 
 llm = OpenAI( temperature=0)
 
 #tools = load_tools(['google-search'], llm=llm)
-os.environ["GOOGLE_CSE_ID"] = "045ce996aee984559"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCt3rg2zFsnK9e_O0LUE1I_IQbvBTojD_U"
-os.environ["NEWS_API_KEY"] = "a715f9012c85492fa24958731f5b9c39"
+os.environ["GOOGLE_CSE_ID"] = GOOGLE_CSE_ID
+os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
+os.environ["NEWS_API_KEY"] = NEWS_API_KEY
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 res = []
 
 @tool

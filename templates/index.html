@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,4 +41,77 @@
     </div>
 
 </body>
+=======
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>S4 - Projecet Template</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="S4 - Projecet Template" />
+		<meta property="og:site_name" content="S4 - Projecet Template" />
+		<meta property="og:title" content="S4 - Projecet Template" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="S4 - Projecet Template" />
+		<link href="https://fonts.googleapis.com/css?display=swap&family=Space+Grotesk:700,700italic%7CInter:600,600italic,400,400italic,700,700italic%7CSora:800,800italic" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="assets/main.css" />
+		<noscript><link rel="stylesheet" href="assets/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<section id="home-section">
+						<div id="container02" class="style1 container columns" style="margin-bottom: 100px;">
+							<div class="wrapper">
+								<div class="inner">
+									<div>
+										<h1 id="text01" class="style1">Fact Check claims based on Papers</h1>
+										<p id="text02" class="style2">Fact Check a claim or answer a question based on scientifc papers.</p>
+									</div>
+									<div>
+										<form enctype="multipart/form-data" id="form01" method="post" action="/done" class="style1">
+											<div class="inner">
+												<div class="field">
+													<input type="text" name="claim" id="form01-claim" placeholder="Claim" maxlength="256" required />
+													<div style="height: 20px;"></div>
+													<input type="file" id="form01-file" name="myfile" accept="application/pdf"/>
+												</div>
+												<div class="actions">
+													<button type="submit"><svg><use xlink:href="assets/icons.svg#arrow-right"></use></svg><span class="label">check</span></button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="container01" class="style3 container default">
+							<div class="wrapper">
+								<div class="inner">
+									<h2 id="text04" class="style1">Fact Checked</h2>
+									<p id="text03" class="style2">{% if answer %}{{answer}}{% endif %}</p>
+									<h2 id="text04" class="style1">Sources:</h2>
+									{% if sources %}
+									<div id="list01" class="list">
+										<ul>
+											{% for source in sources %}
+											<li>
+												<p id="text03" class="style2"><a href={{source}}>{{source}}</a></p>
+											</li>
+											{% endfor %}
+										</ul>
+									</div>
+									{% endif %}
+									<hr id="divider01" class="style1 full">
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script src="assets/main.js"></script>
+	</body>
+>>>>>>> 51d0383aa62cde572ce16203c470eb9398a5c56d
 </html>

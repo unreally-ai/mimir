@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="width=device-width, inital-scale=1.0">
+    <title>Unreally</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+    <!-- overlay -->
+    <div id="overlay-container" class="overlay">
+        <a class="closebtn" onclick="closeOverlay()">×</a>
+        <div class="overlay-content">
+            <!-- overlay content -->
+            <h2>Result:</h1>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div> 
+    <div class="head">
+        <h1>Unreally</h2>
+        <h4>Get real-time internet context for claims. Enter a single one or upload a document and we will extract the key claims. Then press the orange button.</h4>
+    </div>
+    <!-- search bar -->
+    <div class="container">
+        <!-- file upload button -->
+        <!-- <button class="upbutton" type="submit"><img src="images/upload.svg"></button> -->
+        <input type="file" id="upload" hidden name="myfile" accept="application/pdf"/>
+        <label for="upload"><img src="images/upload.svg"></label>
+
+        <form action="" class="search-bar">
+            <input id="search-bar-input" type="text" placeholder="enter a claim" name="q">
+            <img src="images/search.svg">
+        </form>
+
+        <button id="gobuttonLoad" class="buttonload" type="submit" onclick="openOverlay()">
+            <i class="fa fa-refresh fa-spin"></i>
+        </button>
+
+        <button id="gobuttonDefault" type="submit" onclick="openOverlay()">
+            <img src="images/arrow-right.svg">
+        </button>
+    </div>
+
+</body>
+</html>

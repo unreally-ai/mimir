@@ -18,17 +18,14 @@ function readInput() {
     }
 }
 
-var buttonState = 0
-function changeButtonMode() {
+function changeButtonMode(buttonState) {
     if (buttonState == 0) {
         document.getElementById("gobuttonDefault").style.display = "none"; 
         document.getElementById("gobuttonLoad").style.display = "block";
-        buttonState = 1
     }
     else if (buttonState == 1) {
         document.getElementById("gobuttonDefault").style.display = "block"; 
         document.getElementById("gobuttonLoad").style.display = "none";
-        buttonState = 0
     }
 }
 
@@ -36,8 +33,6 @@ function openOverlay() {
     // read the input
     readInput()
 
-    // change button to loading
-    changeButtonMode()
     // todo: call backend to get prediciton
 
     // stop loading
@@ -48,4 +43,5 @@ function openOverlay() {
 
 function closeOverlay() {
     document.getElementById("overlay-container").style.height = "0%";
+    changeButtonMode(1)
 }

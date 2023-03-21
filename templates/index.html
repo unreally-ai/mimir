@@ -46,11 +46,12 @@
             <button id="gobuttonLoad" class="buttonload" type="submit">
                 <i class="fa fa-refresh fa-spin"></i>
             </button>
-            <button id="gobuttonDefault" type="submit">
+            <button id="gobuttonDefault" type="submit" onclick="changeButtonMode(0)">
                 <img src="../assets/images/arrow-right.svg">
             </button>
             {% if query %}
                 <script>openOverlay()</script>
+                <script>changeButtonMode(1)</script>
             {% endif %}
         </form>
         

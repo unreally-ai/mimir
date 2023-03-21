@@ -165,10 +165,11 @@ label img {
   }
 
   p.source {
-    font-size: small;
+    font-size: medium;
     color: black;
   }
   a.source {
     font-size: small;
     color: black;
+    text-align: left;
   }

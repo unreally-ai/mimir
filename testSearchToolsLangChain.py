@@ -2,7 +2,7 @@ from langchain.agents import initialize_agent, load_tools, tool
 from langchain import OpenAI
 from langchain.utilities import GoogleSearchAPIWrapper
 import os
-from secrets import *
+from temp_secrets import *
 
 llm = OpenAI( temperature=0)
 

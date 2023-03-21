@@ -23,7 +23,7 @@ def check():
     answer = evaluation[0]
     sources = evaluation[1][0]
     # print(answer)
-    return render_template('index.html', query=query, answer=answer, sources=sources, )
+    return render_template('index.html', query=query, answer=answer, sources=sources)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)

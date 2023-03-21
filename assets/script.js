@@ -1,9 +1,51 @@
+// reads the input claim(s)
+function readInput() {
+    //todo: check if file uploaded (and if txt, pdf file)
+    if (1 == 2) {
+        print("math is no more")
+        return 666
+    }
+    else {
+        //else read from bar
+        let text = document.getElementById('search-bar-input').value
+        // check if empty
+        if(text.length == 0) {
+            return 1
+        }
+        
+        console.log(text)
+        return text
+    }
+}
+
+var buttonState = 0
+function changeButtonMode() {
+    if (buttonState == 0) {
+        document.getElementById("gobuttonDefault").style.display = "none"; 
+        document.getElementById("gobuttonLoad").style.display = "block";
+        buttonState = 1
+    }
+    else if (buttonState == 1) {
+        document.getElementById("gobuttonDefault").style.display = "block"; 
+        document.getElementById("gobuttonLoad").style.display = "none";
+        buttonState = 0
+    }
+}
 
 function openOverlay() {
-    // to do: function chain that reads input or document & dislpays it in overlay
-    document.getElementById("overlay-container").style.width = "100%";
+    // read the input
+    readInput()
+
+    // change button to loading
+    changeButtonMode()
+    // todo: call backend to get prediciton
+
+    // stop loading
+
+    // open overlay
+    document.getElementById("overlay-container").style.height = "100%";
 }
 
 function closeOverlay() {
-    document.getElementById("overlay-container").style.width = "0%";
+    document.getElementById("overlay-container").style.height = "0%";
 }

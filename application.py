@@ -13,17 +13,17 @@ def home():
 def check():
     output = request.form.to_dict()
     print(output)
-    pdf = request.files['myfile']
+    # pdf = request.files['myfile']
     query: str = output['claim']
     print(query)
-    if pdf.filename != '':
-        pdf.save(pdf.filename)
-        query = run(read_pdf(pdf.filename))
+    # if pdf.filename != '':
+    #     pdf.save(pdf.filename)
+    #     query = run(read_pdf(pdf.filename))
     evaluation = main(query)
     answer = evaluation[0]
     sources = evaluation[1][0]
-    print(answer)
-    return render_template('index.html', answer = answer, sources = sources)
+    # print(answer)
+    return render_template('index.html', query=query, answer=answer, sources=sources, )
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
